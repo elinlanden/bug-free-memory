@@ -1,0 +1,143 @@
+:root {
+    --c1: gold;
+    --c2: orange;
+    --c3: yellow;
+    --c4: wheat;
+    --c5: indianred;
+    --sz1: 16vw;
+    --sz2: 15vw;
+    --sz3: 14vw;
+    --sz4: 12vw;
+  }
+
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+#colorScheme{
+    height: 20%;
+    display: flex;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#playground {
+    width: 100%;
+    height: 80%;
+    background-color: var(--c5);
+    transition: background-color .2s;
+
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#colorScheme .active {
+    -webkit-box-shadow: 0px 0px 10px black;
+            box-shadow: 0px 0px 10px black;
+    transition: box-shadow .2s;
+  }
+
+  .boxesColorScheme:hover {
+    -webkit-box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px black;
+  }
+
+#bigger, #stop, #smaller{
+    flex-grow: 1;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255,.3);
+    border: 1px solid black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+}
+#bigger{
+    margin-right: 100px;
+}
+#smaller{
+    margin-left: 100px;
+}
+
+#star, #firstSquare,#secondSquare,#thirdSquare,#circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .2s;
+    
+}
+
+#firstSquare{
+    height: var(--sz2);
+    width: var(--sz2);
+    background-color:var(--c2); 
+    transition: height 20s, width 20s; 
+
+}
+
+#secondSquare{
+    height: var(--sz3);
+    width: var(--sz3);
+    background-color: var(--c3); 
+    transition: height 20s, width 20s; 
+}
+
+#thirdSquare{
+    height: var(--sz4);
+    width: var(--sz4);
+    background-color: var(--c4);  
+    transition: height 20s, width 20s;
+}
+
+#fourthSquare{
+    height: var(--sz1);
+    width: var(--sz1);
+    background-color:var(--c3);  
+    rotate: 45deg;
+    transition: height 20s, width 20s;
+}
+
+#circle{
+    height: var(--sz1);
+    width: var(--sz1);
+    background-color: var(--c5);  
+    border-radius: 50%;
+    transition: height 20s, width 20s;
+}
+
+#playground > div:nth-child(2){
+    padding-top: 100px;
+}
+
+#colorScheme{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+.boxesColorScheme{
+    width: 100vw;
+    display: flex;
+    border: 1px solid black;
+    margin: 1px;
+    transition: box-shadow .2s;
+    
+}
+
+#colorScheme div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
